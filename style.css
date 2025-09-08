@@ -69,8 +69,15 @@ header {
   font-size: 16px;
   transition: 0.3s;
 }
+.home-btn a{
+  text-decoration: none;
+  color: black;
+}
 .home-btn:hover {
   background: black;
+  border: 1px solid white;
+}
+.home-btn:hover a{
   color: white;
 }
 
