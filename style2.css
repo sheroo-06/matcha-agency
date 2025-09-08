@@ -15,7 +15,7 @@ body {
 .main {
     width: 100%;
     margin: 0% auto;
-    background: radial-gradient(circle, #1298af, #04343d);
+    background: radial-gradient(circle, rgb(213, 227, 179), rgb(114, 126, 82));
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -240,7 +240,7 @@ body {
 }
 
 .agency-right {
-    background: linear-gradient(190deg, #1bb7d3, #04343d);
+    background: radial-gradient(circle, rgb(213, 227, 179), rgb(114, 126, 82));
     border-radius: 20px;
     margin-right: 30px;
     padding: 20px;
@@ -302,7 +302,7 @@ body {
 /* ---------slider wrraper------- */
 
 .slider-wrraper {
-    background: radial-gradient(circle, #1298af, #04343d);
+    background: radial-gradient(circle, rgb(213, 227, 179), rgb(114, 126, 82));
     width: 100%;
     max-width: 1600px;
     margin: 0% auto;
@@ -524,7 +524,7 @@ body {
     flex-direction: column;
     gap: 20px;
     border-radius: 15px;
-    background: radial-gradient(circle, #1298af, #04343d);
+    background: radial-gradient(circle, rgb(213, 227, 179), rgb(114, 126, 82));
 }
 
 .book-call-container {
@@ -762,7 +762,7 @@ body {
 .process-bottom-right-block {
     width: 60%;
     height: 200px;
-    background: radial-gradient(circle, #1298af, #04343d);
+    background: radial-gradient(circle, rgb(213, 227, 179), rgb(114, 126, 82));
     padding: 20px;
     border-radius: 20px;
     color: white;
@@ -771,7 +771,7 @@ body {
 /* -------calender section --------- */
 .calender-section {
     width: 100%;
-    background: radial-gradient(circle, #1298af, #04343d);
+    background: radial-gradient(circle, rgb(213, 227, 179), rgb(114, 126, 82));
     max-width: 1600px;
     margin: 0% auto;
     height: auto;
@@ -835,7 +835,7 @@ body {
 /* -----footer section ------- */
 .footer {
     width: 100%;
-    background: radial-gradient(circle, #1298af, #04343d);
+    background: radial-gradient(circle, rgb(213, 227, 179), rgb(114, 126, 82));
     max-width: 1600px;
     margin: 0% auto;
     height: auto;
@@ -1017,7 +1017,7 @@ body {
 
     .slider-wrraper {
         position: relative;
-        height: 950px;
+        height: 970px;
     }
 
     .m-btn {
