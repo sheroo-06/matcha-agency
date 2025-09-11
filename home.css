@@ -357,93 +357,6 @@ body {
   text-align: center;
   font-size: 12px;
 }
-/* ----------contact section -------- */
-.contact {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0px auto;
-  height: auto;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 200px;
-}
-.contact-container h1 {
-  font-size: 40px;
-  font-weight: 100;
-}
-.contact-container .contact-btn {
-  margin-top: 40px;
-  display: inline-block;
-  background: black;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border: none;
-  font-size: 16px;
-  transition: 0.3s;
-}
-/* ----------footer section------- */
-footer {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0px auto;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 60px 0px 60px;
-}
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 40px;
-}
-.footer-left h2 {
-  font-size: 25px;
-  font-weight: 100;
-}
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 40px;
-}
-.footer-right .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 20px;
-}
-.cookie-btn {
-  background: black;
-  color: white;
-  bottom: -30px;
-  padding: 10px 20px;
-  border-radius: 10px 10px 0 0;
-  border: none;
-  font-size: 16px;
-  float: right;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  transform: translateY(60%);
-}
-.cookie-btn a {
-  color: white;
-}
-.cookie-btn:hover {
-  transform: translateY(0);
-}
 
 /* ------responsive code---------- */
 @media (max-width: 756px) {
@@ -557,23 +470,5 @@ footer {
   .testimonial-right p {
     margin: 0;
     padding: 0;
-  }
-  .contact-container h1 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .contact-container .contact-btn {
-    font-size: 12px;
-  }
-  footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer-left h2 {
-    font-weight: bold;
-  }
-  .footer-left,
-  .footer-right {
-    text-align: center;
   }
 }

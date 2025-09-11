@@ -69,18 +69,18 @@
 
       /* Responsive look */
       @media (max-width: 768px) {
-        .testimonial-content{
+        .testimonial-content {
           width: 80%;
           text-align: center;
         }
-        .testimonial-content h4{
+        .testimonial-content h4 {
           font-size: 20px;
         }
-        .testimonial-content h1{
+        .testimonial-content h1 {
           font-size: 35px;
           font-weight: 600;
         }
-        .testimonial-content p{
+        .testimonial-content p {
           font-size: 16px;
           line-height: 1.5;
         }
@@ -147,6 +147,14 @@
         </div>
       </section>
     </section>
+    <div id="footer"></div>
     <script src="include.js"></script>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
