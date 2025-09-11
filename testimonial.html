@@ -42,6 +42,7 @@
         font-weight: 100;
       }
       .testimonial-content h1 {
+        text-align: center;
         font-size: 45px;
         font-weight: 100;
       }
@@ -50,15 +51,54 @@
         text-align: center;
         margin-bottom: 20px;
       }
+      .testimonial-videos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 40px;
+      }
+
+      .video-card video {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      /* Responsive look */
+      @media (max-width: 768px) {
+        .testimonial-content{
+          width: 80%;
+          text-align: center;
+        }
+        .testimonial-content h4{
+          font-size: 20px;
+        }
+        .testimonial-content h1{
+          font-size: 35px;
+          font-weight: 600;
+        }
+        .testimonial-content p{
+          font-size: 16px;
+          line-height: 1.5;
+        }
+        .testimonial-videos {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body>
-     <div data-include="header.html"></div>
+    <div data-include="header.html"></div>
     <section class="testimonial-container">
       <div class="testimonial-main">
         <div class="testimonial-content">
           <h4>TESTIMONIALS</h4>
-          <h1>Découvrez ce que disent nos clients satisfaits de nos services</h1>
+          <h1>
+            Découvrez ce que disent nos clients satisfaits de nos services
+          </h1>
           <p>
             Nos clients apprécient la qualité de notre travail et la créativité
             de notre équipe. Chaque projet est réalisé avec soin pour répondre
@@ -68,7 +108,45 @@
           </p>
         </div>
       </div>
+      <section class="testimonial-videos">
+        <div class="video-card">
+          <video
+            src="testimonial-video/WhatsApp-Video-2025-03-08-at-19.16.47 (1).mp4"
+            controls
+          ></video>
+        </div>
+        <div class="video-card">
+          <video
+            src="testimonial-video/WhatsApp-Video-2025-03-08-at-19.16.47 (1).mp4"
+            controls
+          ></video>
+        </div>
+        <div class="video-card">
+          <video
+            src="testimonial-video/WhatsApp-Video-2025-03-08-at-19.16.47 (1).mp4"
+            controls
+          ></video>
+        </div>
+        <div class="video-card">
+          <video
+            src="testimonial-video/WhatsApp-Video-2025-03-08-at-19.16.47 (1).mp4"
+            controls
+          ></video>
+        </div>
+        <div class="video-card">
+          <video
+            src="testimonial-video/WhatsApp-Video-2025-03-08-at-19.16.47 (1).mp4"
+            controls
+          ></video>
+        </div>
+        <div class="video-card">
+          <video
+            src="testimonial-video/WhatsApp-Video-2025-03-08-at-19.16.47 (1).mp4"
+            controls
+          ></video>
+        </div>
+      </section>
     </section>
-     <script src="include.js"></script>
+    <script src="include.js"></script>
   </body>
 </html>
