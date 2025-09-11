@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Matcha</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: white;
+        margin-top: 100px;
+      }
+      .about-container {
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+        margin: 0% auto;
+      }
+      .about-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .about-content {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .about-content h4 {
+        font-size: 25px;
+        font-weight: 100;
+      }
+      .about-content h1 {
+        font-size: 45px;
+        font-weight: 100;
+      }
+      .about-content p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .about-img {
+        width: 80%;
+        height: 500px;
+        border-radius: 20px;
+      }
+      .about-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .about-para {
+        width: 60%;
+        font-size: 20px;
+        margin: 20px;
+        text-align: center;
+      }
+      .team-heading h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 100;
+        margin-top: 100px;
+      }
+      .main-team-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .main-team {
+        width: 25%;
+        height: 550px;
+        border-radius: 20px;
+      }
+      .main-team-img {
+        width: 100%;
+        height: 70%;
+        border-radius: 20px;
+      }
+      .main-team-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .main-team-content {
+        margin-top: 20px;
+      }
+      .main-team-content h2 {
+        font-size: 20px;
+      }
+      .main-team-content h4 {
+        font-size: 18px;
+        font-weight: 100;
+        padding: 10px 0;
+      }
+      .main-team-content p {
+        font-size: 14px;
+      }
+      .sub-team-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+      }
+      .sub-team {
+        width: 20%;
+        height: 550px;
+        border-radius: 20px;
+      }
+      .sub-team-img {
+        width: 100%;
+        height: 70%;
+        border-radius: 20px;
+      }
+      .sub-team-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .sub-team-content {
+        margin-top: 20px;
+      }
+      .sub-team-content h2 {
+        font-size: 20px;
+      }
+      .sub-team-content h4 {
+        font-size: 18px;
+        font-weight: 100;
+        padding: 10px 0;
+      }
+      .sub-team-content p {
+        font-size: 14px;
+      }
+      @media (max-width: 900px){
+        .about-content{
+          width: 80%;
+          text-align: center;
+        }
+        .about-content h4{
+          font-size: 20px;
+        }
+        .about-content h1{
+          font-size: 35px;
+          font-weight: 600;
+        }
+        .about-content p{
+          font-size: 16px;
+          line-height: 1.5;
+        }
+        .about-img {
+          padding: 10px;
+          width: 100%;
+          height: 300px;
+        }
+        .about-para{
+          width: 80%;
+        }
+        .about-para p{
+          font-size: 16px;
+          line-height: 1.5;
+        }
+
+        .main-team-container{
+          flex-direction: column;
+        }
+        .main-team{
+          width: 100%;
+          padding: 10px;
+        }
+        .sub-team-container{
+          flex-direction: column;
+        }
+        .sub-team{
+          width: 100%;
+        }
+        .team-heading h2{
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="about-container">
+      <div class="about-main">
+        <div class="about-content">
+          <h4>À PROPOS DE Matcha</h4>
+          <h1>Notre histoire, votre succès</h1>
+          <p>
+            Chez Matcha Agency, nous sommes passionnés par l’univers du
+            e-commerce et spécialisés dans la création de boutiques Shopify
+            performantes. Notre mission est d’accompagner les marques dans leur
+            croissance en leur offrant des solutions créatives et sur mesure.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="about-images/2147656716.jpg" alt="" />
+        </div>
+        <div class="about-para">
+          <p>
+            De la conception au lancement, nous travaillons main dans la main
+            avec nos clients pour donner vie à leur vision. Notre expertise en
+            design, développement et stratégie digitale garantit des résultats
+            concrets et durables pour chaque projet.
+          </p>
+        </div>
+      </div>
+      <div class="team-heading">
+        <h2>Rencontrez L’équipe</h2>
+      </div>
+      <div class="main-team-container">
+        <div class="main-team">
+          <div class="main-team-img">
+            <img src="about-images/2150167751.jpg" alt="" />
+          </div>
+          <div class="main-team-content">
+            <h2>Clara Dupont</h2>
+            <h4>Fondatrice & Directrice Créative</h4>
+            <p>
+              Clara transforme les idées en marques uniques grâce à son
+              expertise en design et en stratégie digitale. Elle guide chaque
+              projet avec passion et créativité.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-team">
+          <div class="main-team-img">
+            <img src="about-images/4522.jpg" alt="" />
+          </div>
+          <div class="main-team-content">
+            <h2>Julien Morel</h2>
+            <h4>Développeur Shopify Senior</h4>
+            <p>
+              Julien crée des boutiques Shopify performantes et sur mesure. Sa
+              maîtrise technique garantit des sites rapides et efficaces.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-team">
+          <div class="main-team-img">
+            <img src="about-images/16219.jpg" alt="" />
+          </div>
+          <div class="main-team-content">
+            <h2>Sophie Martin</h2>
+            <h4>Spécialiste Marketing Digital</h4>
+            <p>
+              Sophie conçoit des stratégies marketing innovantes pour booster la
+              visibilité et les ventes en ligne des marques.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-team-container">
+        <div class="sub-team">
+          <div class="sub-team-img">
+            <img src="about-images/3347.jpg" alt="" />
+          </div>
+          <div class="sub-team-content">
+            <h2>Emma Lefèvre</h2>
+            <h4>Gestionnaire de Projets</h4>
+            <p>
+              Emma coordonne chaque étape du projet avec précision et assure une
+              communication fluide entre l’équipe et le client.
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-team">
+          <div class="sub-team-img">
+            <img src="about-images/1142.jpg" alt="" />
+          </div>
+          <div class="sub-team-content">
+            <h2>Nicolas Petit</h2>
+            <h4>Analyste SEO</h4>
+            <p>
+              Nicolas optimise la visibilité des boutiques en ligne grâce à des
+              stratégies SEO performantes et durables.
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-team">
+          <div class="sub-team-img">
+            <img src="about-images/60118.jpg" alt="" />
+          </div>
+          <div class="sub-team-content">
+            <h2>Amélie Laurent</h2>
+            <h4>Responsable Relation Client</h4>
+            <p>
+              Amélie garantit une expérience client exceptionnelle en offrant un
+              support rapide, personnalisé et chaleureux.
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-team">
+          <div class="sub-team-img">
+            <img src="about-images/1449.jpg" alt="" />
+          </div>
+          <div class="sub-team-content">
+            <h2>Thomas Garnier</h2>
+            <h4>Développeur Front-End</h4>
+            <p>
+              Thomas conçoit des interfaces modernes et responsives pour offrir
+              une navigation fluide sur toutes les plateformes.
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-team">
+          <div class="sub-team-img">
+            <img src="about-images/73551.jpg" alt="" />
+          </div>
+          <div class="sub-team-content">
+            <h2>Julie Caron</h2>
+            <h4>Experte Contenu & Rédaction</h4>
+            <p>
+              Julie crée des contenus engageants et optimisés pour attirer et
+              fidéliser la clientèle en ligne.
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-team">
+          <div class="sub-team-img">
+            <img src="about-images/24697.jpg" alt="" />
+          </div>
+          <div class="sub-team-content">
+            <h2>Maxime Roux</h2>
+            <h4>Consultant en Stratégie E-commerce</h4>
+            <p>
+              Maxime aide les marques à développer leur chiffre d’affaires en
+              proposant des solutions e-commerce adaptées et innovantes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

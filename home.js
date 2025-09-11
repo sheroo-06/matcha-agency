@@ -26,3 +26,25 @@ document.querySelectorAll(".faq-question").forEach((question) => {
     item.classList.toggle("active");
   });
 });
+
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+    const overlay = document.getElementById("overlay");
+    const closeBtn = document.getElementById("closeBtn");
+
+    // Open menu
+    hamburger.addEventListener("click", () => {
+      menu.classList.add("show");
+      overlay.classList.add("show");
+    });
+
+    // Close menu
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("show");
+      overlay.classList.remove("show");
+    });
+
+    overlay.addEventListener("click", () => {
+      menu.classList.remove("show");
+      overlay.classList.remove("show");
+    });
