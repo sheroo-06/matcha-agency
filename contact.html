@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Matcha</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: white;
+        margin-top: 100px;
+      }
+      .contact-section-container {
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+        margin: 0% auto;
+      }
+      .contact-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact-content {
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+      }
+      .contact-content h4 {
+        font-size: 25px;
+        font-weight: 100;
+      }
+      .contact-content h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 100;
+      }
+      .contact-boxes {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .box {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px;
+      }
+      .box h4 {
+        font-size: 25px;
+        font-weight: 100;
+        margin: 10px;
+      }
+      .box p {
+        font-size: 18px;
+      }
+      .contact-img {
+        margin-top: 20px;
+        width: 100%;
+        height: 500px;
+        border-radius: 20px;
+      }
+      .contact-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+      @media (max-width: 900px) {
+        .contact-content {
+          width: 80%;
+        }
+        .contact-content h4 {
+          font-size: 20px;
+        }
+        .contact-content h1 {
+          font-size: 35px;
+          font-weight: 600;
+        }
+        .contact-boxes {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+        .contact-img{
+            padding: 10px;
+            width: 100%;
+            height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div data-include="header.html"></div>
+    <section class="contact-section-container">
+      <div class="contact-main">
+        <div class="contact-content">
+          <h4>Contactez-nous</h4>
+          <h1>
+            Parlez-nous de vos idées, nous bâtissons ensemble vos réussites
+            digitales.
+          </h1>
+        </div>
+        <div class="contact-boxes">
+          <div class="box">
+            <h4>TÉLÉPHONE</h4>
+            <p>France +33762176262</p>
+            <p>Maroc +212657000007</p>
+          </div>
+          <div class="box">
+            <h4>ADDRESS</h4>
+            <p>66 Avenue des Champs Elysées Paris</p>
+            <p>10 Rue Jihani, Casablanca</p>
+          </div>
+          <div class="box">
+            <h4>EMAIL</h4>
+            <p>contact@matcha.com</p>
+          </div>
+        </div>
+        <div class="contact-img">
+          <img src="contact-image/8049.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <script src="include.js"></script>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
