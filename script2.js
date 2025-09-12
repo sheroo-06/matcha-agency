@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slider-wrraper-content");
 
