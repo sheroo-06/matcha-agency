@@ -81,6 +81,57 @@
         height: 100%;
         border-radius: 20px;
       }
+      .contact-form {
+        width: 80%;
+        margin: 100px 0 0px 0;
+        padding: 0px 100px;
+        border-radius: 12px;
+      }
+      .contact-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 25px;
+      }
+      label {
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      .form-btn {
+        margin-top: 15px;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: black;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .form-btn:hover {
+        background: white;
+        color: black;
+        border: 1px solid black;
+      }
+      #status {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 14px;
+      }
       @media (max-width: 900px) {
         .contact-content {
           width: 80%;
@@ -98,10 +149,14 @@
           justify-content: center;
           align-items: center;
         }
-        .contact-img{
-            padding: 10px;
-            width: 100%;
-            height: 300px;
+        .contact-img {
+          padding: 10px;
+          width: 100%;
+          height: 300px;
+        }
+        .contact-form{
+          width: 100%;
+          padding: 20px;
         }
       }
     </style>
@@ -136,6 +191,27 @@
         <div class="contact-img">
           <img src="contact-image/8049.jpg" alt="" />
         </div>
+
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/movnbgrv"
+            method="POST"
+          >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button class="form-btn" type="submit">Send Message</button>
+          </form>
+          <div id="status"></div>
+        </div>
       </div>
     </section>
     <div id="footer"></div>
@@ -146,6 +222,32 @@
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
         });
+
+      const form = document.getElementById("contactForm");
+      const status = document.getElementById("status");
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        status.textContent = "⏳ Sending...";
+
+        try {
+          const data = new FormData(form);
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            status.textContent = "✅ Thanks! Your message has been sent.";
+            form.reset();
+          } else {
+            status.textContent = "❌ Oops! Something went wrong.";
+          }
+        } catch (error) {
+          status.textContent = "❌ Network error. Try again.";
+        }
+      });
     </script>
   </body>
 </html>
