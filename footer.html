@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>footer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <style>
       /* ----------contact section -------- */
       .contact {
@@ -93,6 +96,28 @@
       .cookie-btn:hover {
         transform: translateY(0);
       }
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+      .whatsapp-float img {
+        width: 35px;
+        height: 35px;
+      }
       @media (max-width: 900px) {
         .contact-container h1 {
           font-size: 20px;
@@ -139,5 +164,15 @@
       </div>
     </footer>
     <button class="cookie-btn"><a href="">Cookie Settings</a></button>
+    <a
+      href="https://api.whatsapp.com/send?phone=923700148143&text=Hello%20Matcha%20Agency%2C%20I%20want%20to%20know%20about%20your%20services."
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+        alt="WhatsApp"
+      />
+    </a>
   </body>
 </html>
